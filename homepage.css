@@ -1,1 +1,9 @@
+.inline{
+    display: inline;
+    margin-right:30px;
+    font-size: large;
+    text-align: center;
+    background-color: rgb(28, 28, 211);
+    color: aliceblue;
+}
 
