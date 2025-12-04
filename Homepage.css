@@ -1,25 +1,85 @@
-.inline{
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(rgb(167, 194, 170),rgb(177, 222, 232));
+    height:100vh;
+    font-family: system-ui;
+}
 
-    display: inline-block;
-    margin-left:20px;
-    padding: 10px 15px;
-    font-size: 16px;
-    font-weight: 600;
-    color:#444;
+a{
+   
+    color:white;
+    text-decoration: none;
 
-    background-color :#e9ecef; 
-    border-radius: 40px / 25px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:30px;
+    width: 100%;
+    
+}
+header.logo{
+    font-size:30px;
+    text-transform: uppercase;
 
-    box-shadow:0 1px 3px rgba(0,0,0, 0.1);
+}
+header ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style-type:none;
     
 
+
 }
-input{
-    transition: .3s ease;
+header ul li{
+    margin-right:30px;
 }
-input:focus {
-    outline: 4px solid 
-    rgba(30,109,255,0.7);
+
+header ul li a{
+    display:inline-block;
+    padding: 6px 15px;
+    border-radius: 20;
+    text-decoration: none;
+    
+}
+header ul li a:hover, 
+header ul li a.active
+{
+    background:#fff ;
+    color:rgb(10, 172, 231);
 
 }
 
+
+
+.inline{
+  
+
+    display: inline-block;
+    margin: right 25px;;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color:#f6f3f3;
+    text-decoration: none;
+    
+
+   
+    border-radius: 40px / 25px; 
+
+}
+.nablusimage{
+    width: 200px;
+   
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
