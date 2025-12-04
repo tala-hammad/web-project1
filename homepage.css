@@ -14,4 +14,12 @@
     
 
 }
+input{
+    transition: .3s ease;
+}
+input:focus {
+    outline: 4px solid 
+    rgba(30,109,255,0.7);
+
+}
 
