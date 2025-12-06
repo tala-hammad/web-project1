@@ -83,3 +83,22 @@ header ul li a.active
     margin-bottom: 50px;
 
 }
+.nablussumud{
+    height:80px ;
+    width: auto;
+
+}
+.logo{
+    color:#f6f3f3;
+    font-family: sans-serif;
+    font-size: 48px;
+    font-weight:  bold;
+    margin:0;
+}
+.container{
+    display:flex;
+    align-items: center;
+    gap:15px;
+    background-color:#aebfb2 ;
+    padding: 20px;
+}
