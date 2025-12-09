@@ -50,7 +50,7 @@ a {
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: #aebfb2;
+    background-color: #e0d372;
     padding: 8px 20px; /* Using the smaller padding from the first block */
     position: relative;
     z-index: 10;
@@ -87,7 +87,7 @@ header {
     width: 100%;
     box-sizing: border-box;
     /* Use a consistent background for the header */
-    background-color: rgba(167, 194, 170, 0.3);
+    background-color:#94d5e6;
 }
 
 header ul {
