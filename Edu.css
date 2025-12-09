@@ -136,4 +136,28 @@ header ul li a:hover {
     font-weight: bold;
     color: #000;
     margin: 0;
+    
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+.card {
+    background-color: #ffffff;
+    border: 5px solid #ccc;
+    color: rgb(10, 172, 231);
+    border-color: #e0d372;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+p{
+    color: rgb(10, 172, 231);
+   padding-left: 2%;
+
 }
