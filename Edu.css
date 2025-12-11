@@ -10,6 +10,7 @@ body {
     background: none; 
     height: 100vh;
     font-family: system-ui;
+    background: linear-gradient(rgb(167, 194, 170), rgb(177, 222, 232));
 }
 
 
