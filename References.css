@@ -11,6 +11,8 @@ body {
     background: none; 
     height: 100vh;
     font-family: system-ui;
+     background: linear-gradient(rgb(173, 187, 166), rgb(177, 222, 232));
+
 }
 
 
