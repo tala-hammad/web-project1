@@ -153,7 +153,7 @@ header ul li a:hover {
     border-radius: 10px;
     padding: 20px;
     width: 2800px;
-    height: 100px;
+    height:auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   
     background-color: #ffffff;
