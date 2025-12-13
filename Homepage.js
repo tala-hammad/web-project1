@@ -1,10 +1,17 @@
-const homepageURL=window.location.pathname.split('/').pop();
-const buttonlinks=document.querySelectorAll('.inline');
-buttonlinks.forEach(link => {
-    if (link.getAttribute('href') === homepageURL ) {
-        link.classList.add('active-btn');
-    }
+
+
+const searchInput = document.getElementById('searchInput');
+const searchIcon = document.querySelector('.fa-search');
+const closeIcon = document.querySelector('.fa-close');
+
+searchIcon.addEventListener('click', () => {
+    searchInput.classList.toggle('active');
+    searchIcon.classList.toggle('fa-search');
+    searchIcon.classList.toggle('fa-close');
 });
+
+
+
 
 
 
