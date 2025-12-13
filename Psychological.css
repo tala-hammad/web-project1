@@ -11,6 +11,8 @@ body {
     background: none; 
     height: 100vh;
     font-family: system-ui;
+    background-color: #94d5e6;
+
 }
 
 
@@ -82,12 +84,12 @@ body {
 
 header {
     display: flex;
-    justify-content: center; /* لتوسيط القائمة أفقياً */
+    justify-content: center; 
     align-items: center;
     position: relative;
     z-index: 10;
     margin: 0;
-    padding: 10px 0; /* مسافة علوية وسفلية */
+    padding: 10px 0; 
     width: 100%;
     box-sizing: border-box;
     background-color: #94d5e6;

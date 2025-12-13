@@ -50,14 +50,22 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    
-    
     background-color: #e0d372; 
     
     padding: 8px 20px;
     position: relative;
     z-index: 10; 
     width: 100%;
+    justify-content: left;
+    flex-wrap: wrap;
+
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        
+    }
 }
 
 .nablussumud {
@@ -91,6 +99,15 @@ header {
     width: 100%;
     box-sizing: border-box;
     background-color: #065366;
+    flex-wrap: wrap;
+
+}
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        
+    }
 }
 
 header ul {
