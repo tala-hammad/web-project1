@@ -12,6 +12,10 @@ body {
     font-family: system-ui;
      background-color: #94d5e6;
 }
+a {
+    color:white;
+    text-decpration:non;
+}
 
 
 
