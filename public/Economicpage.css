@@ -21,28 +21,6 @@ a {
 }
 
 
-.nablusimage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-image: url(NAO.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
-}
-.nablusimage::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); 
-    z-index: 2;
-}
 
 
 .container {
@@ -55,22 +33,26 @@ a {
     z-index: 10;
     width: 100%;
 }
+
+
 .nablussumud {
     height: 50px; 
     width: auto;
 }
+
 .logo {
     color: #f6f3f3;
     font-family: sans-serif;
-    
-    font-size: 32px; 
+    font-size: 32px;
     font-weight: bold;
     margin: 0;
     padding: 0;
 }
+
 .logo a {
-    color: inherit;
+    color: inherit; 
 }
+
 
 
 header {
@@ -79,42 +61,58 @@ header {
     align-items: center;
     position: relative;
     z-index: 10;
-  
-    margin: 0; 
+    margin: 0;
     padding: 10px 0; 
     width: 100%;
     box-sizing: border-box;
-   
-    background-color:#94d5e6;
+    background-color: #065366;
+    flex-wrap: wrap;
+
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    gap: 10px;
+        
+    }
 }
 
 header ul {
     display: flex;
+    flex-wrap:wrap;
     justify-content: center;
-    align-items: center;
+    padding:0;
+    gap: 10px;
     list-style-type: none;
 }
 
 header ul li {
-    margin-right: 30px;
+    margin-right: 0;
 }
 
+
+a {
+    color: white;  
+    text-decoration: none;
+}
 
 .inline {
-    display: block; 
-    padding: 5px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #f6f3f3;
    
-    border-radius: 20px; 
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: 600;
+   
+    white-space: nowrap;
+    
 }
 
-
-header ul li a:hover,
-header ul li a.active {
+header ul li a.active,
+header ul li a:hover {
     background: #fff;
     color: rgb(10, 172, 231);
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

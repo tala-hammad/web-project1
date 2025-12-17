@@ -39,7 +39,6 @@
 
 
 
-
 .nablussumud {
     height: 50px; 
     width: auto;
@@ -74,17 +73,25 @@ header {
     flex-wrap: wrap;
 
 }
-
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    gap: 10px;
+        
+    }
+}
 
 header ul {
     display: flex;
+    flex-wrap:wrap;
     justify-content: center;
-    align-items: center;
+    padding:0;
+    gap: 10px;
     list-style-type: none;
 }
 
 header ul li {
-    margin-right: 30px;
+    margin-right: 0;
 }
 
 
