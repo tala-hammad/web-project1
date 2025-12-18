@@ -57,28 +57,50 @@ new Chart(ctx, {
 
 const xValues2 = ["Educational Programs", "Volunteer Work", "Civic Engagement", "Community Groups", "Mentoring"];
 const yValues2 = [72, 68, 60, 55, 45];
-const barColors2 = ["red", "green","blue","orange","brown"];
-
+const barColors2 = ["#1d3557", "#457b9d", "#a8dadc", "#e0d372", "#d62828"]; 
 const ctx2 = document.getElementById('myChart2');
 
 new Chart(ctx2, {
-  type: "bar",
-  data: {
-  labels: xValues2,
-  datasets: [{
-    backgroundColor: barColors2,
-    data: yValues2
-  }]
-},
-  options: {
-    indexAxis: 'y',
-    plugins: {
-      legend: { display: false },
-      title: {
-        display: true,
-        text: "Community Participation Activities",
-        font: {size:16}
-      }
+    type: "bar",
+    data: {
+        labels: xValues2,
+        datasets: [{
+            backgroundColor: barColors2,
+            data: yValues2,
+            borderRadius: 5  
+        }]
     },
-  }
+    options: {
+        indexAxis: 'y',
+        responsive: true,
+        
+        scales: {
+            x: {
+                beginAtZero: true, 
+                title: {
+                    display: true,
+                    text: 'Participation Rate (%)'
+                }
+            },
+            y: {
+              
+                beginAtZero: true 
+            }
+        },
+        
+        plugins: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: true,
+                text: "Community Participation Activities",
+                font: {
+                    size: 16,
+                    weight: 'bold'
+                },
+                padding: { bottom: 20 }
+            }
+        }
+    }
 });
