@@ -184,10 +184,13 @@ p{
 
 }
 .cards-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap:24px;
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: center; 
+    gap: 100px;               
+    width: 100%;
+    margin-bottom: 80px;
+    padding-top: 50px;
+   
 }
 @media (min-width:768px){
     .cards-container{
@@ -195,28 +198,31 @@ p{
 
     }
 }
-.first-card,.second-card,.third-card,{
-    background-color: white;
+.first-card,.second-card,.third-card{
+    text-align: center;
+    width: 350px;       
+    min-height: 200px;
     padding:24px;
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgb(0, 0,0,0.1),0 2px 4px -2px rgb(0,0,0,0.1);
     transition: transform 0.3s ease-in-out;
     border-left: 4px solid transparent;
-
+background-color: aliceblue;
 }
-.first-card:hover,.second-card:hover,.third-card:hover,{
+.first-card:hover,.second-card:hover,.third-card:hover,.forth-card:hover{
     transform: translate(-5px);
 }
 .first-card{
     border-left-color: #f97316;
+    
 
 }
-.time,.NO-of-sections,.city-name,.percentage-of-the-info-integrity{
+.percent1,.percent2,.percent3,.percentage-of-the-info-integrity{
     font-size: 36px;
     font-weight: 800;
 }
-.time{
-    color: orange;
+.percent1{
+    color:blue;
 
 }
 .explore{
@@ -227,6 +233,7 @@ p{
     font-size: 14px;
     color:#9ca3af;
 }
+
 .second-card{
     border-left-color:green;
 
@@ -240,39 +247,62 @@ p{
     margin-top: 40px;
 
 }
-.names-of-dimensions{
-    font-size: 14px;
-    color: #8264e2;
-    font-weight: 500;
+
+.percent2{
+    color:blue;
 }
 .third-card{
     border-left-color:#e0d372 ;
     
 }
-.city-name{
+.percent3{
     color:blue;
 
 }
 .Targeted-City{
-    color:grey;
+    color:rgb(30, 27, 27);
     margin-top: 4px;
 
 }
 .city-position{
     font-size: 14px;
-    color:#9ca3af
+    color:#18191a
 }
 
-.percentage-of-the-info-integrity{
-    color:#e0d372;
+.content{
+    display: flex;
+    justify-content: center; 
+    gap: 100px;               
+    width: 100%;
+    margin-bottom: 80px;
+    padding-top: 10px;
+    transition: transform 0.3s ease-in-out;
+    border-left: 4px solid transparent;
+   
+}
+
+.content-info{
+
+    width: 95%;     
+    max-width: 1400px;
+    min-height: 200px;
+    padding:24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0, 0,0,0.1),0 2px 4px -2px rgb(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    border-left: 4px solid transparent;
+    border-left-color: #040303;
+ background-color: aliceblue;
+ font-size: large;
+}
+.content:hover{
+    transform: translate(-5px);
+}
+.Unemployment-color{
+    color:blue;
+}
+.GDP-color{
+    color:blue;
 
 }
-.w1{
-    color:grey;
-    margin-top: 4px;
 
-}
-.w2{
-    font-size: 14px;
-    color:#9ca3af,
-}
