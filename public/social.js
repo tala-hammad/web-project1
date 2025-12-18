@@ -1,4 +1,4 @@
-const ctx = document.getElementById('BarChart');
+const ctx = document.getElementById('myChart');
 const xValues = ["2018", "2019", "2020", "2021", "2022", "2023"];
 
 new Chart(ctx, {
