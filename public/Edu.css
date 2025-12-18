@@ -183,3 +183,160 @@ p{
     font-family: Arial, Helvetica, sans-serif;
 
 }
+.cards-container{
+    display: flex;
+    justify-content: center; 
+    gap: 100px;               
+    width: 100%;
+    margin-bottom: 80px;
+    padding-top: 50px;
+   
+}
+@media (min-width:768px){
+    .cards-container{
+        grid-template-columns: repeat(4,1fr);
+
+    }
+}
+.first-card,.second-card,.third-card{
+    text-align: center;
+    width: 350px;       
+    min-height: 200px;
+    padding:24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0, 0,0,0.1),0 2px 4px -2px rgb(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    border-left: 4px solid transparent;
+background-color: aliceblue;
+}
+.first-card:hover,.second-card:hover,.third-card:hover,.forth-card:hover{
+    transform: translate(-5px);
+}
+.first-card{
+    border-left-color: #f97316;
+    
+
+}
+.percent1,.percent2,.percent3,.percentage-of-the-info-integrity{
+    font-size: 36px;
+    font-weight: 800;
+}
+.percent1{
+    color:blue;
+
+}
+.explore{
+    color:grey;
+
+}
+.from-time{
+    font-size: 14px;
+    color:#9ca3af;
+}
+
+.second-card{
+    border-left-color:green;
+
+}
+.NO-of-sections{
+    color:green;
+
+}
+.title-of-card{
+    color: grey;
+    margin-top: 40px;
+
+}
+
+.percent2{
+    color:blue;
+}
+.third-card{
+    border-left-color:#e0d372 ;
+    
+}
+.percent3{
+    color:blue;
+
+}
+.Targeted-City{
+    color:rgb(30, 27, 27);
+    margin-top: 4px;
+
+}
+
+.dashboard-container{
+    max-width: 1400px;
+    margin:40px auto;
+    padding:0 20px;
+
+}
+.Projectsummary{
+    background: white;
+    padding:24px;
+    border-radius: 12px;
+
+
+    box-shadow: 0 10px 15px -3px rgb(0,0,0,0.1),0 4px 6px -4px rgba(0,0,0,0.1); 
+    transition:transform 0.3s ease-in-out ;
+    border-bottom: #084d5e;
+    margin-bottom: 32px;
+
+}
+.Projectsummary:hover{
+    transform: translate(-5px);
+    
+}
+.summarycolor{
+    font-size: 24px;
+    font-weight: 700;
+    color:#084d5e;
+    margin-bottom:8px;
+
+}
+.paragraph-summary{
+    color:#4b5563;
+    line-height: 1.625;
+}
+.city-position{
+    font-size: 14px;
+    color:#18191a
+}
+
+.content{
+    display: flex;
+    justify-content: center; 
+    gap: 100px;               
+    width: 100%;
+    margin-bottom: 80px;
+    padding-top: 10px;
+    transition: transform 0.3s ease-in-out;
+    border-left: 4px solid transparent;
+   
+}
+
+.content-info{
+
+    width: 95%;     
+    max-width: 1400px;
+    min-height: 200px;
+    padding:24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0, 0,0,0.1),0 2px 4px -2px rgb(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    border-left: 4px solid transparent;
+    border-left-color: #040303;
+ background-color: aliceblue;
+ font-size: large;
+}
+.content:hover{
+    transform: translate(-5px);
+}
+.Unemployment-color{
+    color:blue;
+}
+.GDP-color{
+    color:blue;
+
+}
+
