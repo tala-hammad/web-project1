@@ -283,11 +283,7 @@ header ul li a:hover {
     font-size: 20px;
     font-weight: 700;
     color:#084d5e;
-   align-items: center ;
-   justify-content: center;
-    
- 
-
+    text-align: center;
 
 }
 .flex-items,.flex-items2,.flex-items3{
