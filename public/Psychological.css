@@ -243,3 +243,25 @@ header ul li a:hover {
 
 
 }
+.cardline{
+    width:100%;
+    max-width:  680px;
+    padding: 15px;
+    position: relative;
+
+}
+.cardline::before,.cardline::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+.card::before{
+    z-index:1;
+    background-color: rgba(255,255,255,0.2);
+    transform: translate(-30px,-30px);
+}
