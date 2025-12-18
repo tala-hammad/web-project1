@@ -8,17 +8,13 @@
 
 body {
   
-    background: none; 
-    height: 100vh;
+    background: white; 
+    
+    min-height: 100vh;
     font-family: system-ui;
     background-color: #f0efb7;
 
 }
-
-
-
-
-
 
 
 
@@ -35,6 +31,7 @@ body {
     z-index: 10; 
     width: 100%;
 }
+
 
 .nablussumud {
     height: 50px; 
@@ -230,4 +227,19 @@ header ul li a:hover {
     color:#9ca3af;
 }
 
+.container-chart{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:200px;
+ 
+}
+.chart{
+  padding:2rem;
+  border:1px solid #f49131;
+  border-radius: 1rem;
+  background: white;
+  box-shadow:0 0 16px rgba(0,0,0,0.8)
 
+
+}
