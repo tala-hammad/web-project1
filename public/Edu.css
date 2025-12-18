@@ -183,7 +183,7 @@ p{
     font-family: Arial, Helvetica, sans-serif;
 
 }
-.cards-container1{
+.cards-container{
     display: grid;
     grid-template-columns: 1fr;
     gap:24px;
