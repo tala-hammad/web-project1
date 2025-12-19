@@ -234,23 +234,30 @@ header ul li a:hover {
     gap:200px;
  
 }
-.chart{
-  padding:2rem;
-  border:1px solid #f49131;
-  border-radius: 1rem;
-  background: white;
-  box-shadow:0 0 16px rgba(0,0,0,0.8);
-  padding-bottom: 2rem;
-  
-
-
-}
-.card:hover{
-    background: #fff;
-    color: rgb(10, 172, 231);
-    display:flex;
+.chart {
+    
+    display: flex;
     justify-content: center;
     align-items: center;
+    
+    
+    padding: 2rem;
+    
+    
+    border: 1px solid #f49131;
+    border-radius: 1rem;
+    background: white;
+    color: #333;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    
+    transition: all 0.3s ease;
 }
 
+.chart:hover {
+    
+    background: #fdfdfd; 
+    color: rgb(10, 172, 231);
+    border-color: rgb(10, 172, 231); 
+    transform: translateY(-4px); 
+}
 
