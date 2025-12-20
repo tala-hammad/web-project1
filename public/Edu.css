@@ -207,7 +207,7 @@ p{
     box-shadow: 0 4px 6px -1px rgb(0, 0,0,0.1),0 2px 4px -2px rgb(0,0,0,0.1);
     transition: transform 0.3s ease-in-out;
     border-left: 4px solid transparent;
-background-color: aliceblue;
+    background-color: aliceblue;
 }
 .first-card:hover,.second-card:hover,.third-card:hover,.forth-card:hover{
     transform: translate(-5px);
@@ -244,7 +244,7 @@ background-color: aliceblue;
 }
 .title-of-card{
     color: grey;
-    margin-top: 40px;
+    margin-top: 0px;
 
 }
 
