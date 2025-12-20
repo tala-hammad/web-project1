@@ -361,4 +361,12 @@ background-color: aliceblue;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+.img1{
+    height: 60px;               
+    width: auto;               
+    object-fit: contain;
+    display: flex;
+    gap: 5px;               
+    text-align: left;
+}
 
