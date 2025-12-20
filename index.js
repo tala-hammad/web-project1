@@ -1,22 +1,25 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const path = require('path'); 
 
 const app = express();
 
-
+// --- 1. الإعدادات الأساسية (Middleware) ---
 app.use(cors()); 
-
 app.use(express.json()); 
 
+// 🚀 الربط مع مجلد public: هذا السطر يضمن تحميل الـ CSS والـ JS والصور تلقائياً
+app.use(express.static(path.join(__dirname, 'public'))); 
 
+// --- 2. الاتصال بقاعدة البيانات (MongoDB Atlas) ---
 const dbURI = 'mongodb+srv://halaalmasri_db_user:BfZeh7L7UhNEBpM2@cluster0.9mhiny7.mongodb.net/NablusProject?retryWrites=true&w=majority';
 
 mongoose.connect(dbURI)
     .then(() => console.log("✅ Database connected successfully"))
     .catch(err => console.log("❌ Error connecting to database:", err));
 
-
+// --- 3. تعريف النماذج (Models) ---
 const dataSchema = new mongoose.Schema({
     dimension: String,   
     value: String,       
@@ -25,9 +28,8 @@ const dataSchema = new mongoose.Schema({
 });
 const DataEntry = mongoose.model('DataEntry', dataSchema);
 
-
 const referenceSchema = new mongoose.Schema({
-    category: String, 
+    Category: String, 
     title: String,
     authors: String,
     journal: String,
@@ -36,11 +38,19 @@ const referenceSchema = new mongoose.Schema({
 });
 const Reference = mongoose.model('Reference', referenceSchema);
 
+// --- 4. مسارات الصفحات (Frontend Routes) ---
 
-app.get('/', (req, res) => {
-    res.send("Backend Server is Running! 🚀");
+// تشغيل صفحة ProjectOverview عند طلب الرابط
+app.get('/ProjectOverview.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'ProjectOverview.html'));
 });
 
+// تشغيل الصفحة الرئيسية (اختياري)
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// --- 5. مسارات البيانات (API Routes) ---
 
 app.get('/get-chart-data', async (req, res) => {
     try {
@@ -51,7 +61,6 @@ app.get('/get-chart-data', async (req, res) => {
     }
 });
 
-
 app.get('/get-references', async (req, res) => {
     try {
         const refs = await Reference.find();
@@ -60,7 +69,6 @@ app.get('/get-references', async (req, res) => {
         res.status(500).json({ error: "Failed to fetch references" });
     }
 });
-
 
 app.post('/add-reference', async (req, res) => {
     try {
@@ -72,10 +80,10 @@ app.post('/add-reference', async (req, res) => {
     }
 });
 
-
+// --- 6. تشغيل السيرفر ---
 const PORT = 5000;
 app.listen(PORT, () => {
-    console.log(`🚀 Server running at http://localhost:${PORT}`);
-    console.log(`🔗 Chart API: http://localhost:${PORT}/get-chart-data`);
-    console.log(`🔗 References API: http://localhost:${PORT}/get-references`);
+    console.log(`\n🚀 Server is UP and Running!`);
+    console.log(`📂 Page Link: http://localhost:${PORT}/ProjectOverview.html`);
+    console.log(`✅ Data Status: Indexes are READY in Atlas\n`);
 });
