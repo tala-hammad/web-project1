@@ -385,4 +385,15 @@ background-color: aliceblue;
     text-align: left;
 }
 
+.main-title{
+    color:white ;
+    background-color: #318498;
+    text-align: center;
+    padding: 20px;
+    
+}
+.submain-title{
+    padding:20px 0 10px 20px;
+    color:black;
 
+}
