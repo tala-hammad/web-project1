@@ -41,6 +41,15 @@ app.get('/get-references', async (req, res) => {
 // توجيه الصفحات
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 app.get('/References.html', (req, res) => res.sendFile(path.join(__dirname, 'References.html')));
+// هذا المسار خاص بالشارتات فقط ولا يؤثر على المراجع
+app.get('/get-chart-data', async (req, res) => {
+    try {
+        const data = await DataEntry.find({}); 
+        res.json(data);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
 
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => console.log(`🚀 Site running on port ${PORT}`));
