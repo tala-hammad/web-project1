@@ -1,6 +1,6 @@
 const fetchanddisplayRefs=async() =>{
     try{
-        const response = await fetch ('http://localhost:5000/get-references');
+        const response = await fetch ('get-references');
         const data = await response.json();
         const econContainer = document.getElementById('economic-list');
         const eduContainer = document.getElementById('educational-list');  
