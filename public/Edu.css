@@ -332,11 +332,34 @@ background-color: aliceblue;
 .content:hover{
     transform: translate(-5px);
 }
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+
+  max-width: 900px;   
+  width: 100%;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #4f46e5;
+
+  direction: ltr;  
+}
 .Unemployment-color{
     color:blue;
 }
 .GDP-color{
     color:blue;
 
+}
+.card p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4b5563;
+
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
