@@ -10,7 +10,7 @@ body {
     
     height: 100vh;
     font-family: system-ui;
-     background-color: #f0efb7;
+     background-color: #f1f1d9;
 }
 a {
     color:white;
@@ -49,7 +49,7 @@ a {
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: #e0d372; 
+    background-color: #e4ac06; 
     padding: 8px 20px;
     position: relative;
     z-index: 10; 

@@ -10,7 +10,7 @@
 
     body{
         font-family:'Inter',sans-serif;
-        background-color: #eff0b9;
+        background-color: #f1f1de;
         min-height: 100hv;   
     }
 
@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: #e0d372; 
+    background-color:#e4ac06; 
     
     padding: 10px 20px;
     position: relative;
