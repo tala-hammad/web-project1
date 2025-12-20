@@ -1,0 +1,360 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+body {
+  
+    
+    height: 100vh;
+    font-family: system-ui;
+    background-color: #f7f6ec;
+  
+
+}
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+    
+    background-color:#e4ac06; 
+    background-attachment: fixed;
+    
+    padding: 8px 20px;
+    position: relative;
+    z-index: 10; 
+    width: 100%;
+}
+
+
+.nablussumud {
+    height: 50px; 
+    width: auto;
+}
+
+.logo {
+    color: #f6f3f3;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.logo a {
+    color: inherit; 
+}
+
+
+
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin: 0;
+    padding: 10px 0; 
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #065366;
+    flex-wrap: wrap;
+
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    gap: 10px;
+        
+    }
+}
+
+header ul {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding:0;
+    gap: 10px;
+    list-style-type: none;
+}
+
+header ul li {
+    margin-right: 0;
+}
+
+
+a {
+    color: white;  
+    text-decoration: none;
+}
+
+.inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    
+
+    
+    margin-right: 25px; 
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f6f3f3;
+    text-decoration: none;
+    border-radius: 20px; 
+}
+
+header ul li a.active,
+header ul li a:hover {
+    background: #fff;
+    color: rgb(10, 172, 231);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.chart-container {
+   margin-left: 60%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.chart {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 250px;
+    margin-top: 30px;
+}
+
+.bar {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 20%;
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+
+
+.bar-fill {
+    width: 60px;
+    background: linear-gradient(180deg, #ff7eb3, #ff758c);
+    border-radius: 8px 8px 0 0;
+    transition: 0.3s;
+}
+
+.bar-fill:hover {
+    opacity: 0.8;
+}
+
+.label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.value {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #555;
+}
+.cards-container{
+    display: flex;
+    justify-content: center; 
+    gap: 100px;               
+    width: 100%;
+    margin-bottom: 80px;
+    padding-top: 50px;
+   
+}
+@media (min-width:768px){
+    .cards-container{
+        grid-template-columns: repeat(4,1fr);
+
+    }
+}
+.first-card,.second-card,.third-card,.forth-card{
+    text-align: center;
+    width: 350px;       
+    min-height: 200px;
+    padding:24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0, 0,0,0.1),0 2px 4px -2px rgb(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    border-left: 4px solid transparent;
+background-color: aliceblue;
+}
+.first-card:hover,.second-card:hover,.third-card:hover,.forth-card:hover{
+    transform: translate(-5px);
+}
+.first-card{
+    border-left-color: #f97316;
+    
+
+}
+.percent1,.percent2,.percent3,.percentage-of-the-info-integrity{
+    font-size: 36px;
+    font-weight: 800;
+}
+.percent1{
+    color:blue;
+
+}
+.explore{
+    color:grey;
+
+}
+.from-time{
+    font-size: 14px;
+    color:#9ca3af;
+}
+
+.second-card{
+    border-left-color:green;
+
+}
+.NO-of-sections{
+    color:green;
+
+}
+.title-of-card{
+    color: grey;
+    margin-top: 40px;
+
+}
+
+.percent2{
+    color:blue;
+}
+.third-card{
+    border-left-color:#e0d372 ;
+    
+}
+.percent3{
+    color:blue;
+
+}
+.forth-card{
+     border-left-color:#e0d372 ;
+     margin-left: auto;
+    margin-right: auto;
+}
+.Targeted-City{
+    color:rgb(30, 27, 27);
+    margin-top: 4px;
+
+}
+.city-position{
+    font-size: 14px;
+    color:#18191a
+}
+
+.content{
+    display: flex;
+    justify-content: center; 
+    gap: 100px;               
+    width: 100%;
+    margin-bottom: 80px;
+    padding-top: 10px;
+    transition: transform 0.3s ease-in-out;
+    border-left: 4px solid transparent;
+   
+}
+
+.content-info{
+
+    width: 95%;     
+    max-width: 1400px;
+    min-height: 200px;
+    padding:24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0, 0,0,0.1),0 2px 4px -2px rgb(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    border-left: 4px solid transparent;
+    border-left-color: #040303;
+ background-color: aliceblue;
+ font-size: large;
+}
+.content:hover{
+    transform: translate(-5px);
+}
+.Unemployment-color{
+    color:blue;
+}
+.GDP-color{
+    color:blue;
+
+}
+.img1{
+    height: 60px;               
+    width: auto;                
+    object-fit: contain;
+    display: flex;
+    gap: 5px;               
+    text-align: left;
+}
+.main-title{
+    color:white ;
+    background-color: #318498;
+    text-align: center;
+    padding: 20px;
+    
+}
+.submain-title{
+    padding:20px 0 10px 20px;
+    color:black;
+
+}
+.charts-container {
+    display: flex;             
+    flex-direction: row;      
+    justify-content: center;   
+    align-items: flex-start;   
+    gap: 250px;                 
+    flex-wrap: wrap;           
+}
+.myChart{
+   width:100%; 
+   max-width:400px; 
+   height: fit-content; 
+}
+.chart-card {
+    margin-top: 50px;
+    background-color: #f0f8ff; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+    width: 90%;
+    max-width: 450px;
+    border-left: 8px solid #ff6600; 
+}
+.chart-card2 {
+    
+    margin-top: 50px;
+    background-color: #f0f8ff; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+    width: 90%;
+    max-width: 450px;
+    border-left: 8px solid #ff6600; 
+}
+ 
