@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychological page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js">
+
+     
+    <link rel="stylesheet" href="Psychological.css">
+</head>
+<body>
+     <div class="container">
+        <img src="nablussumod.png" alt="NablusSumud"  class="nablussumud">
+     <h1 class="logo" ><a href="#">NablusSumud</a><br></h1>
+    </div>
+
+     <header> 
+   
+<ul >
+     <li><a  class="inline" href="index.html">Homepage</a></li>
+    <li><a   class="inline" href="ProjectOverview.html">Project overview</a></li>
+    <li><a  class="inline" href="Economicpage.html">Economic Dashboard</a></li>
+    <li><a  class="inline" href="Educationalpage.html">Educational Dashboard</a></li>
+    <li><a class="active inline" class="inline" href="Psychological.html">Psychological Dashboard</a></li>
+    <li><a  class="inline" href="Social.html">Social Dashboard</a></li>
+    <li><a  class="inline" href="References.html">References</a></li>
+</ul>
+</header>
+   <div class="main-title">
+    <h1>Psychological Effects Dashboard</h1>
+    <h3>Analysis of mental well-being,stress levels, and Psychological resilience</h3>
+   </div>
+   <div class="submain-title">
+    <h2><strong>Key Performance Indicators</strong></h2>
+
+   </div>
+   <div class="cards-container">
+    <div class="first-card">
+      <div class="card-header">
+        <div>
+
+      <div class="card-title">Mental well-being</div>
+        <div class="card-sub-title">Overall mental health score</div>
+        </div>
+        <span class="icon">🧠</span>
+        </div>
+        <div class="card-data">
+          <span class="main-score">7.8</span><span class="total-score">/10</span>
+       <span class="stat-positive">↗ 4.5%</span>  
+          </div>
+          <div class="vs-text">Improvement vs. 2023</div>
+    </div>
+
+            
+    
+    <div class="second-card">
+      <div class="card-header">
+        <div>
+        <div class="card-title">Stress levels</div>
+        <div class="card-sub-title">Average stress rating</div></div>
+        
+        <span class="icon">⚡</span>
+        </div>
+        <div class="card-data">
+        <span class="main-score">4.2</span><span class="total-score">/10</span>
+          <span class="stat-negative">↘ 31.2%</span>
+          </div>
+          <div class="vs-text">Reduction (lower is better)</div>
+          </div>
+
+   
+   
+    
+    <div class="third-card">
+      <div class="card-header">
+        <div>
+
+      <div class="card-title">life Satisfaction</div>
+        <div class="card-sub-title">Satisfaction with life</div>
+        </div>
+        <span class="icon">😊</span>
+        </div>
+        <div class="card-data">
+          <span class="main-score">8.1 </span><span class="total-score">/10</span>
+       <span class="stat-positive">↗ 6.8%</span>  
+          </div>
+          <div class="vs-text">Improvement vs. 2023</div>
+    </div>
+  
+
+    <div class="forth-card">
+      <div class="card-header">
+        <div>
+
+      <div class="card-title">Resilience Score</div>
+        <div class="card-sub-title">Ability to cope with challenges</div>
+        </div>
+        <span class="icon">💪</span>
+        </div>
+        <div class="card-data">
+          <span class="main-score">7.5 </span><span class="total-score">/10</span>
+       <span class="stat-positive">↗ 3.2%</span>  
+          </div>
+          <div class="vs-text">Improvement vs. 2023</div>
+    </div>
+    </div>
+<div class="container-chart">
+  <div class="chart">
+    <canvas id="barchart" width="400" height="400"></canvas>
+  </div>
+    <div class="chart">
+      <canvas id="doughnut" width="400" height="100"></canvas>
+    </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="chart1.js"></script>
+<script src="chart2.js"></script>
+
+</body>
+</html>

@@ -1,47 +1,21 @@
 
-* {
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
     box-sizing: border-box; 
 }
 
 
 body {
+  
     
     height: 100vh;
     font-family: system-ui;
-     background-color: #f1f1d9;
-}
-a {
-    color:white;
-    text-decoration:non;
+    background-color: #f7f6ec;
+  
+
 }
 
-
-
-.nablusimage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh; 
-    background-image: url(NAO.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1; 
-}
-
-.nablusimage::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); 
-    z-index: 2; 
-}
 
 
 
@@ -49,12 +23,17 @@ a {
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: #e4ac06; 
+    
+    
+    background-color:#e4ac06; 
+    background-attachment: fixed;
+    
     padding: 8px 20px;
     position: relative;
     z-index: 10; 
     width: 100%;
 }
+
 
 .nablussumud {
     height: 50px; 
@@ -143,45 +122,61 @@ header ul li a:hover {
     justify-content: center;
     align-items: center;
 }
-
-.title-section {
-    clear: both; 
-    text-align: right; 
-    margin-top: 30px; 
-    padding-right: 2%; 
-}
-
-.title-section h1 {
-    font-size: 48px;
-    font-weight: bold;
-    color: #000;
-    margin: 0;
-    
-}
-.container2 {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 40px;
-}
-.card {
-    background-color: #ffffff;
-    border: 5px solid #ccc;
-    color: rgb(10, 172, 231);
-    border-color: #e0d372;
-    border-radius: 10px;
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.chart-container {
+   margin-left: 60%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
 }
-p{
-   color: #000;
-   padding-left: 2%;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
 
+.chart {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 250px;
+    margin-top: 30px;
+}
+
+.bar {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 20%;
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+
+
+.bar-fill {
+    width: 60px;
+    background: linear-gradient(180deg, #ff7eb3, #ff758c);
+    border-radius: 8px 8px 0 0;
+    transition: 0.3s;
+}
+
+.bar-fill:hover {
+    opacity: 0.8;
+}
+
+.label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.value {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #555;
 }
 .cards-container{
     display: flex;
@@ -198,7 +193,7 @@ p{
 
     }
 }
-.first-card,.second-card,.third-card{
+.first-card,.second-card,.third-card,.forth-card{
     text-align: center;
     width: 350px;       
     min-height: 200px;
@@ -259,44 +254,15 @@ background-color: aliceblue;
     color:blue;
 
 }
+.forth-card{
+     border-left-color:#e0d372 ;
+     margin-left: auto;
+    margin-right: auto;
+}
 .Targeted-City{
     color:rgb(30, 27, 27);
     margin-top: 4px;
 
-}
-
-.dashboard-container{
-    max-width: 1400px;
-    margin:40px auto;
-    padding:0 20px;
-
-}
-.Projectsummary{
-    background: white;
-    padding:24px;
-    border-radius: 12px;
-
-
-    box-shadow: 0 10px 15px -3px rgb(0,0,0,0.1),0 4px 6px -4px rgba(0,0,0,0.1); 
-    transition:transform 0.3s ease-in-out ;
-    border-bottom: #084d5e;
-    margin-bottom: 32px;
-
-}
-.Projectsummary:hover{
-    transform: translate(-5px);
-    
-}
-.summarycolor{
-    font-size: 24px;
-    font-weight: 700;
-    color:#084d5e;
-    margin-bottom:8px;
-
-}
-.paragraph-summary{
-    color:#4b5563;
-    line-height: 1.625;
 }
 .city-position{
     font-size: 14px;
@@ -332,19 +298,6 @@ background-color: aliceblue;
 .content:hover{
     transform: translate(-5px);
 }
-.card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 20px auto;
-
-  max-width: 900px;  
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-left: 6px solid #4f46e5;
-
-  direction: ltr;  
-}
 .Unemployment-color{
     color:blue;
 }
@@ -352,13 +305,56 @@ background-color: aliceblue;
     color:blue;
 
 }
-.card p {
-  font-size: 15px;
-  line-height: 1.8;
-  color: #4b5563;
-
-  text-align: left;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+.img1{
+    height: 60px;               
+    width: auto;                
+    object-fit: contain;
+    display: flex;
+    gap: 5px;               
+    text-align: left;
 }
+.main-title{
+    color:white ;
+    background-color: #318498;
+    text-align: center;
+    padding: 20px;
+    
+}
+.submain-title{
+    padding:20px 0 10px 20px;
+    color:black;
 
+}
+.charts-container {
+    display: flex;             
+    flex-direction: row;      
+    justify-content: center;   
+    align-items: flex-start;   
+    gap: 250px;                 
+    flex-wrap: wrap;           
+}
+.myChart{
+   width:100%; 
+   max-width:400px; 
+   height: fit-content; 
+}
+.chart-card {
+    margin-top: 50px;
+    background-color: #f0f8ff; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+    width: 90%;
+    max-width: 450px;
+    border-left: 8px solid #ff6600; 
+}
+.chart-card2 {
+    
+    margin-top: 50px;
+    background-color: #f0f8ff; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+    width: 90%;
+    max-width: 450px;
+    border-left: 8px solid #ff6600; 
+}
+ 
