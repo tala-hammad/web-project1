@@ -79,8 +79,10 @@
 }
 .welcome-text {
     margin-bottom: 50px;
-    font-size: 50px;
+    font-size: clamp(28px,8vw,50px);
     color: #f0efb7;
+    margin-bottom: 30px;
+    padding: 0 10px;
     
 }
 
@@ -96,6 +98,12 @@
     padding:10px 20px;
     backdrop-filter: blur(4px) saturate(188%);
     
+}
+
+@media(min-width:601px) and (max-width:1024px){
+    .welcome-text{
+        font-size: 40px;
+    }
 }
 ::placeholder{
     color:#084251;
@@ -116,6 +124,11 @@
     height: 60px;
     background: #f0efb7;
     cursor: pointer;
+}
+@media (max-width:600px){
+    .container{
+        justify-content: center;
+    }
 }
 .search-bar input{
     background: transparent;

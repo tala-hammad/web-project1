@@ -28,12 +28,13 @@
         }
         .team{
             width: 100%;
-            height:fit-content;
+            height:auto;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: row;
             font-family:poppins;
+            padding:20px;
 
         }
         
@@ -41,9 +42,10 @@
             width: 100%;
             height: fit-content;
             display: flex;
-            align-items: center;
+            align-items: stretch;
             justify-content: center;
             flex-wrap: wrap;
+            gap: 20px;
 
         }
         .profile{
@@ -58,7 +60,18 @@
             padding-top:20px;
             margin:20px;
             text-align: center;
+            flex-wrap: wrap;
            
+        }
+        .profile:hover{
+            transform: translateY(-5px);
+        }
+
+        @media (max-width:480px){
+            .profile{
+                flex-direction: column;
+                padding: 15px;
+            }
         }
         .profile img{
             width: 100px;
@@ -66,12 +79,13 @@
             border-radius: 50%;
             position: relative;
             z-index: 2;
+            
         }
         .details{
             display:flex;
             flex-direction:column;
             align-items: center;
-            font-size:16px ;
+            font-size:14px ;
             font-weight: 600;
         }
         .details span{
